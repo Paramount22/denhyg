@@ -1,0 +1,206 @@
+.reviews {
+  min-height: 100vh;
+  margin-top: 2.55rem;
+  position: relative;
+  text-align: center;
+  padding: 3rem 1.5rem;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2.2rem, 12vw, 3.5rem);
+    color: $third-color;
+    font-family: 'Parisienne', cursive;
+  }
+
+  h4 {
+    color: lighten($second-color, 30%);
+  }
+
+  .container {
+    margin-top: 3.5rem;
+  }
+
+  .blue-star {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    fill: lighten($third-color, 20%);
+  }
+
+  .pink-star {
+    position: absolute;
+    bottom: 0;
+    right: 55%;
+    animation-delay: 0.5s;
+    fill: lighten($main-color, 20%);
+  }
+}
+
+.reviews p {
+  font-size: 1rem;
+}
+
+.reviews_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.reviews__rate {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.reviews-photo {
+  width: 90%;
+  border-radius: 1.6rem;
+  margin-bottom: 1rem;
+  min-width: 300px; /* Minimálna šírka */
+  min-height: auto; /* Automaticky podľa pomeru strán */
+  width: 100%; /* Obrázok sa roztiahne do veľkosti kontajnera */
+  height: auto;
+}
+
+.rate-box {
+  background-color: $third-color;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  border: 7px solid $bg-color;
+  text-align: center;
+  position: absolute;
+  bottom: -3rem;
+  right: -5rem;
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.rate-box h3 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Parisienne', cursive;
+}
+
+.rate-box span {
+  font-size: 0.9rem;
+}
+
+.reviews__clients {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviews__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: lighten($third-color, 10%);
+  display: block;
+  margin: 0.7rem 0;
+}
+
+.stars {
+  .fa-star {
+    color: #ffa800;
+  }
+}
+
+.rate-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.reviews__clients {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 15rem;
+}
+
+.swiper-pagination-bullet {
+  background: $third-color;
+}
+
+.swiper-slide {
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: justify;
+  color: $second-color;
+
+  p {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    box-shadow: 0 0 5px lightgrey;
+    border-radius: 1.6rem;
+    margin: 1rem 0;
+
+    @media (max-width: 41.3125em) {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  span {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Parisienne', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $third-color;
+  }
+}
+
+.fa-quote-left {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  text-align: left;
+  color: $third-color;
+}
+
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 41.3125em) {
+  .swiper-slide {
+    padding: 1rem;
+  }
+}

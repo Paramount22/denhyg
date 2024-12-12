@@ -1,0 +1,134 @@
+.services {
+  min-height: 70vh;
+  margin-top: 4rem;
+  position: relative;
+
+  .pink-star {
+    fill: lighten($main-color, 20%);
+    width: 4rem;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+    @media (max-width: 93.75em) {
+      top: 5%;
+    }
+  }
+}
+
+.blue-star {
+  fill: lighten($third-color, 20%);
+  width: 5rem;
+  position: absolute;
+  bottom: 30%;
+  left: 1%;
+
+  @media (max-width: 93.75em) {
+    top: 5%;
+    left: 0;
+  }
+}
+
+@supports (-webkit-appearance: none) {
+  .blue-star {
+    bottom: 10rem;
+    left: 0.5rem; /* špecifické pre Chrome */
+  }
+
+  h2 {
+    color: $third-color;
+    //font-size: 3.5rem;
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+  }
+
+  h4 {
+    text-align: center;
+    color: lighten($second-color, 30%);
+  }
+
+  .services-cards {
+    margin: 7rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 53.625em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 48.375em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 33.125em) {
+      grid-template-columns: 1fr;
+    }
+
+    .services-card {
+      transition: 0.3s all ease;
+      h3 {
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 1.2rem;
+        font-weight: 600;
+      }
+
+      .fa-tooth {
+        margin-bottom: 1.2rem;
+      }
+
+      background-color: white;
+      box-shadow: 0px 4px 40px 0px #00000023;
+
+      padding: 1.8rem;
+      border-radius: 1.6rem;
+
+      p {
+        margin-bottom: 1.2rem;
+        line-height: 1.8;
+      }
+
+      a {
+        color: $main-color;
+        font-weight: 600;
+        transition: 0.2s all ease;
+        font-size: 1.1rem;
+      }
+    }
+
+    :hover,
+    :focus,
+    :active {
+      background-color: $third-color;
+      color: white;
+
+      a {
+        color: white;
+        background: $second-color;
+        padding: 0.5rem 0.7rem;
+        border-radius: 1.6rem;
+      }
+    }
+
+    .services-card:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .services-card:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    .services-card:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+
+    .services-card:nth-child(5) {
+      animation-delay: 2s;
+    }
+
+    .services-card:nth-child(6) {
+      animation-delay: 2.5s;
+    }
+  }
+}

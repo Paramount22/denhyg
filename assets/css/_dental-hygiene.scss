@@ -1,0 +1,163 @@
+.dental-info,
+.dental-info-2,
+.dental-info-3 {
+  h2::selection,
+  p::selection,
+  strong::selection {
+    background-color: $main-color;
+  }
+}
+
+.dental-info,
+.dental-info-2,
+.dental-info-3 {
+  margin-top: 2.55rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba($third-color, 0.9),
+      rgba($third-color, 0.9)
+    ),
+    url('../images/cover.jpg');
+  background-position: bottom center;
+  background-size: cover;
+
+  @media (max-width: 51.25em) {
+    min-height: 60vh;
+  }
+
+  h2 {
+    color: white;
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+    transition: 0.3s ease;
+    font-family: 'Parisienne', cursive;
+
+    @media (max-width: 41.3125em) {
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 1.125rem;
+    line-height: 2.8;
+
+    @media (max-width: 41.3125em) {
+      font-size: 1rem;
+      line-height: 1.8;
+      padding: 0 0.5rem;
+    }
+  }
+
+  svg {
+    width: 9.375rem;
+    fill: white;
+
+    @media (max-width: 51.25em) {
+      width: 7rem;
+    }
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-to-action {
+    display: block;
+    min-width: 12rem;
+    margin-top: 2rem;
+    padding: 0.7rem 1.1rem;
+    background-color: $main-color;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s all ease;
+    font-size: 1.1rem;
+    border-radius: 1.6rem;
+    @include nested-box-shadow;
+    &:hover,
+    &:active {
+      background-color: $second-color;
+      .fa-arrow-right {
+        margin-left: 1rem;
+        transition: 0.3s all ease;
+      }
+    }
+
+    @media (max-width: 41.3125em) {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: 41.3125em) {
+    padding-bottom: 1rem;
+  }
+}
+
+.dental-info,
+.dental-info-3 {
+  transform: skewY(-3deg) translate3d(0, 0, 0);
+
+  a {
+    transform: skewY(3deg) translate3d(0, 0, 0);
+  }
+
+  h2,
+  p,
+  svg {
+    transform: skewY(3deg) translate3d(0, 0, 0);
+  }
+}
+
+.dental-info-2 {
+  transform: skewY(3deg) translate3d(0, 0, 0);
+
+  h2,
+  p,
+  svg {
+    transform: skewY(-3deg) translate3d(0, 0, 0);
+  }
+
+  a {
+    transform: skewY(-3deg) translate3d(0, 0, 0);
+  }
+}
+
+.dental-info-3 {
+  a {
+    margin-bottom: 3rem;
+  }
+
+  .fa-tooth {
+    margin-right: 1rem;
+  }
+
+  p {
+    @media (max-width: 51.25em) {
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.dental-info-2 {
+  a {
+    margin-bottom: 2rem;
+  }
+}
+
+.info-slogan {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.dental-info {
+  padding-bottom: 2rem;
+}

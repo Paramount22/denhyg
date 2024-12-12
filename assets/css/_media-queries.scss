@@ -1,0 +1,59 @@
+@media (max-width: 73.25em) {
+  header {
+    justify-content: space-between;
+    .menu,
+    .call-to-action {
+      display: none;
+    }
+
+    .logo {
+      text-align: left;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 28.5em) {
+  .top-bar .contact-bar p:last-child {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 28.625em) {
+  .top-bar {
+    .contact-bar {
+      display: block;
+
+      p {
+        padding: 0.2rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 36.25em) {
+  .rate-box {
+    left: 0;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 68.875em) {
+  .dental-hygiene p {
+    width: 80%;
+  }
+
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 41.3125em) {
+  .hero .intro .call-to-action a {
+    font-size: 1rem;
+  }
+}

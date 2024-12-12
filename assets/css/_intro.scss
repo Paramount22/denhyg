@@ -1,0 +1,152 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background-color: $second-color;
+  background-image: linear-gradient(rgba(black, 0.75), rgba(black, 0.75)),
+    url('../images/hero-2.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-position: center center;
+
+  @media (max-width: 51.25em) {
+    background-attachment: scroll;
+  }
+  .intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .call-to-action {
+      a {
+        padding: 0.7rem 1.2rem;
+        font-size: 1.2rem;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+
+  .main-title {
+    font-size: 3.2rem;
+    color: lighten($main-color, 20%);
+    text-align: center;
+
+    @media (max-width: 59.625em) {
+      font-size: 2.7rem;
+    }
+
+    @media (max-width: 35.125em) {
+      font-size: 2rem;
+    }
+
+    span {
+      color: lighten($third-color, 10%);
+    }
+  }
+
+  .second-title {
+    font-family: 'Parisienne', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    @media (max-width: 35.125em) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.fa-arrow-right {
+  margin-left: 0.5rem;
+  transition: 0.3s all ease;
+}
+
+.hero-2 {
+  margin-top: 2.55rem;
+  min-height: 70vh;
+  position: relative;
+  background-color: $second-color;
+  background-image: linear-gradient(rgba(black, 0.75), rgba(black, 0.75)),
+    url('../images/hero-end.jpeg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+
+  @media (max-width: 51.25em) {
+    background-attachment: scroll;
+  }
+
+  @media (max-width: 50.625em) {
+    min-height: 60vh;
+  }
+
+  .intro {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div {
+      margin-top: 2rem;
+    }
+
+    span {
+      color: $main-color;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: white;
+      margin: 1rem;
+
+      @media (max-width: 59.625em) {
+        font-size: 2.7rem;
+      }
+
+      @media (max-width: 35.125em) {
+        font-size: 2rem;
+      }
+    }
+
+    h3 {
+      color: white;
+      font-size: 2rem;
+      animation-delay: 0.5s;
+      font-family: 'Parisienne', cursive;
+
+      @media (max-width: 35.125em) {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+    }
+
+    h4 {
+      color: $third-color;
+      font-size: 1.2rem;
+    }
+
+    .call-to-action {
+      a {
+        padding: 0.7rem 1.2rem;
+        font-size: 1.2rem;
+        transition: 0.3s all ease;
+
+        @media (max-width: 35.125em) {
+          font-size: 1rem;
+          font-weight: 400;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
